@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second screen</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+    <div class="header">
+
+   
+    <div class="top">
+        <p>IP Adress :<span id="addr"></span></p>
+    </div>
+    <div class="info">
+        <p>Lat:<span id="lat"></span></p>
+        <p>City:<span id="city"></span></p>
+        <p>Orgnisation:<span id="Orgnisation"></span></p>
+    </div>
+
+    <div class="info info2">
+       <p>Long:<span id="long"></span></p>
+        <p>Region:<span id="Region"></span></p>
+       <p>Hostname:<span id="Hostname"></span></p>
+    </div>
+    <br>
+    
+</div>
+
+    <div class="map">
+        <h2>Your Current Location</h2>
+        <div id="showmap" ></div>
+    </div>
+
+    <div class="more">
+        <br><br>
+        <h2>More Information About You</h2>
+        
+            <ul>
+                <li id="currentTime">Time Zone:</li>
+                <li id="currentDateTime">Date And Time:</li>
+                <li id="pincode">Pincode:</li>
+                <li  id="pincodeMessage">Message: Number of pincode(s) found:</li>
+            </ul>
+        </div>
+
+        <div class="post">
+            <br><br>
+            <h2>Post Offices Near You</h2><br>
+            <br><br>
+            <input id="searchInput" type="text" placeholder="Search By Name">
+        </div>
+
+        
+<div class=outerdiv>
+<div id="postOfficeContainer">
+    <!-- <div id="postOfficeName" class="info-box"></div>
+    <div id="branchType" class="info-box"></div>
+    <div id="deliveryStatus" class="info-box"></div>
+    <div id="district" class="info-box"></div>
+    <div id="division" class="info-box"></div> -->
+</div>
+</div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR7OWuvY1Ce_K23dSAcOj6ZfBMrT3lMNI&callback=initMap"></script>
+   
+    
+   
+
+    <script src="post.js"></script>
+
+
+    
+
+</body>
+</html>

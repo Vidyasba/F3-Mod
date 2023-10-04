@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    /* background-color: black; */
+    color:white;
+    /* height: 100%; */
+}
+.top{
+    background-color: black;
+    margin: 20px;
+    font-size: 30px;
+    
+}
+.header{
+    background-color: black;
+}
+.top>p{
+    color:#B8BCCC;
+}
+.info{
+    display: flex;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+}
+.info>p{
+    margin-left:230px;
+   font-size:20px ;
+}
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #575A85;
+    height: 500px;
+    position: relative; /* Add this to make positioning relative to this element */
+}
+
+.map > h2 {
+    position: absolute;
+    top: 30px;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #575A85;
+    color: white;
+}
+.info > p > span {
+    font-size: 18px;
+}
+#showmap{
+    z-index: 1;
+    height: 350px;
+    width:800px;
+    position: absolute;
+    top: 110px;
+}
+.more{
+    background-color: black;
+    color: white;
+    
+}
+.more>h2{
+    margin-left:500px;
+    font-size: 25px;
+}
+.more>ul{
+    margin-top:20px;
+    margin-left:20px;
+    font-size: 20px;
+}
+.more>ul>li{
+    margin-top: 10px;
+    list-style-type: none;
+}
+.post{
+    background-color: black;
+    color: white;
+    height: 250px;
+}
+.post>h2{
+    margin-left:500px ;
+    font-size: 25px;
+}
+#searchInput{
+    width: 800px;
+    margin-left:200px;
+    height: 30px;
+    border:2px solid #575A85;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+.outerdiv{
+    background-color: black;
+    height:700px;
+}
+
+/* CSS to style the info-boxes */
+.info-box {
+    background-color: #575A85;
+    /* border: 1px solid #ccc; */
+    padding: 40px;
+    margin-left: 30px;
+    width: 45%; /* Adjust the width to fit two boxes in a row */
+    height: 300px;
+    box-sizing: border-box;
+    text-align: left;
+    float: left;
+    box-sizing: border-box;
+    color: #B8BCCC;
+    border-radius: 5px;
+}
+.info-box h2 {
+    margin-bottom: 15px; 
+    /* Bottom margin for h2 element */
+}
+
+.info-box p {
+    font-size:18px;
+    margin-bottom: 15px; /* Bottom margin for paragraphs */
+}
+/* Clearfix to ensure proper alignment */
+.postOfficeContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:20px;
+}
+
+/* Media query for responsiveness - show one card per row on smaller screens */
+@media (max-width: 768px) {
+    .info-box {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+  
+  
+  
+  
