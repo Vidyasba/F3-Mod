@@ -67,7 +67,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  initMap(latitude, longitude);
+  // initMap(latitude, longitude);
+
+  //map
+
+    var latitude = parseFloat(getURLParameter("latitude"));
+    var longitude = parseFloat(getURLParameter("longitude"));
+  
+    console.log("ow",longitude,latitude);
+    // Construct the Google Maps URL with latitude and longitude values
+    var mapUrl = `https://maps.google.com/maps?q=${latitude},${longitude}&z=15&output=embed`;
+  
+    // Get the <iframe> element and set the src attribute
+    var mapIframe = document.getElementById("mapIframe");
+    mapIframe.src = mapUrl;
+ 
+  
+
+
+
 
 
 
@@ -161,20 +179,20 @@ function filterPostOffices(searchTerm) {
 
 // Initialize Google Map
 // Google map asking to generate key using billing
-function initMap(latitude, longitude) {
-  // Your initMap code here
-  var mapOptions = {
-      center: { lat: latitude, lng: longitude },
-      zoom: 14,
-  };
-  var map = new google.maps.Map(document.getElementById("showmap"), mapOptions);
+// function initMap(latitude, longitude) {
+//   // Your initMap code here
+//   var mapOptions = {
+//       center: { lat: latitude, lng: longitude },
+//       zoom: 14,
+//   };
+//   var map = new google.maps.Map(document.getElementById("showmap"), mapOptions);
 
-  // Add a marker for the user's location
-  var marker = new google.maps.Marker({
-      position: { lat: latitude, lng: longitude },
-      map: map,
-      title: "User Location",
-  });
-}
+//   // Add a marker for the user's location
+//   var marker = new google.maps.Marker({
+//       position: { lat: latitude, lng: longitude },
+//       map: map,
+//       title: "User Location",
+//   });
+// }
 
  
